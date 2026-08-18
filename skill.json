@@ -1,0 +1,35 @@
+{
+  "name": "genpark-no-code-spatial-xr-3d-scene-simulator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - No-code interactive 3D and XR spatial scene generator & physics simulator.",
+  "author": "genpark",
+  "category": "media",
+  "tags": [
+    "spatial-computing",
+    "xr-scene",
+    "3d-simulator",
+    "interactive-webgl",
+    "ph-august18"
+  ],
+  "inputs": {
+    "scene_description": {
+      "type": "string"
+    },
+    "spatial_boundary_meters": {
+      "type": "object"
+    }
+  },
+  "outputs": {
+    "scene_schema_json": {
+      "type": "object"
+    },
+    "interactive_entities_count": {
+      "type": "integer"
+    },
+    "physics_enabled": {
+      "type": "boolean"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
